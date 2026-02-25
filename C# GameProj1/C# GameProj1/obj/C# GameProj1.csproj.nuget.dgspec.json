@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\ANDREW\\OneDrive\\Documents\\C# GameProj1\\C# GameProj1\\C# GameProj1.csproj": {}
+    "C:\\Users\\ANDREW\\OneDrive\\Documents\\GitHub\\C-Game-Project1\\C# GameProj1\\C# GameProj1\\C# GameProj1.csproj": {}
   },
   "projects": {
-    "C:\\Users\\ANDREW\\OneDrive\\Documents\\C# GameProj1\\C# GameProj1\\C# GameProj1.csproj": {
+    "C:\\Users\\ANDREW\\OneDrive\\Documents\\GitHub\\C-Game-Project1\\C# GameProj1\\C# GameProj1\\C# GameProj1.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\ANDREW\\OneDrive\\Documents\\C# GameProj1\\C# GameProj1\\C# GameProj1.csproj",
+        "projectUniqueName": "C:\\Users\\ANDREW\\OneDrive\\Documents\\GitHub\\C-Game-Project1\\C# GameProj1\\C# GameProj1\\C# GameProj1.csproj",
         "projectName": "C# GameProj1",
-        "projectPath": "C:\\Users\\ANDREW\\OneDrive\\Documents\\C# GameProj1\\C# GameProj1\\C# GameProj1.csproj",
+        "projectPath": "C:\\Users\\ANDREW\\OneDrive\\Documents\\GitHub\\C-Game-Project1\\C# GameProj1\\C# GameProj1\\C# GameProj1.csproj",
         "packagesPath": "C:\\Users\\ANDREW\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\ANDREW\\OneDrive\\Documents\\C# GameProj1\\C# GameProj1\\obj\\",
+        "outputPath": "C:\\Users\\ANDREW\\OneDrive\\Documents\\GitHub\\C-Game-Project1\\C# GameProj1\\C# GameProj1\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\ANDREW\\AppData\\Roaming\\NuGet\\NuGet.Config",

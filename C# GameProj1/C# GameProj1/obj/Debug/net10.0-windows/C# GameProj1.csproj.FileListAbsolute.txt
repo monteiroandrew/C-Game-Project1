@@ -1,0 +1,18 @@
+C:\Users\ANDREW\OneDrive\Documents\GitHub\C-Game-Project1\C# GameProj1\C# GameProj1\bin\Debug\net10.0-windows\C# GameProj1.exe
+C:\Users\ANDREW\OneDrive\Documents\GitHub\C-Game-Project1\C# GameProj1\C# GameProj1\bin\Debug\net10.0-windows\C# GameProj1.deps.json
+C:\Users\ANDREW\OneDrive\Documents\GitHub\C-Game-Project1\C# GameProj1\C# GameProj1\bin\Debug\net10.0-windows\C# GameProj1.runtimeconfig.json
+C:\Users\ANDREW\OneDrive\Documents\GitHub\C-Game-Project1\C# GameProj1\C# GameProj1\bin\Debug\net10.0-windows\C# GameProj1.dll
+C:\Users\ANDREW\OneDrive\Documents\GitHub\C-Game-Project1\C# GameProj1\C# GameProj1\bin\Debug\net10.0-windows\C# GameProj1.pdb
+C:\Users\ANDREW\OneDrive\Documents\GitHub\C-Game-Project1\C# GameProj1\C# GameProj1\obj\Debug\net10.0-windows\C__GameProj1.Form1.resources
+C:\Users\ANDREW\OneDrive\Documents\GitHub\C-Game-Project1\C# GameProj1\C# GameProj1\obj\Debug\net10.0-windows\C__GameProj1.Properties.Resources.resources
+C:\Users\ANDREW\OneDrive\Documents\GitHub\C-Game-Project1\C# GameProj1\C# GameProj1\obj\Debug\net10.0-windows\C# GameProj1.csproj.GenerateResource.cache
+C:\Users\ANDREW\OneDrive\Documents\GitHub\C-Game-Project1\C# GameProj1\C# GameProj1\obj\Debug\net10.0-windows\C# GameProj1.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\ANDREW\OneDrive\Documents\GitHub\C-Game-Project1\C# GameProj1\C# GameProj1\obj\Debug\net10.0-windows\C# GameProj1.AssemblyInfoInputs.cache
+C:\Users\ANDREW\OneDrive\Documents\GitHub\C-Game-Project1\C# GameProj1\C# GameProj1\obj\Debug\net10.0-windows\C# GameProj1.AssemblyInfo.cs
+C:\Users\ANDREW\OneDrive\Documents\GitHub\C-Game-Project1\C# GameProj1\C# GameProj1\obj\Debug\net10.0-windows\C# GameProj1.csproj.CoreCompileInputs.cache
+C:\Users\ANDREW\OneDrive\Documents\GitHub\C-Game-Project1\C# GameProj1\C# GameProj1\obj\Debug\net10.0-windows\C# GameProj1.sourcelink.json
+C:\Users\ANDREW\OneDrive\Documents\GitHub\C-Game-Project1\C# GameProj1\C# GameProj1\obj\Debug\net10.0-windows\C# GameProj1.dll
+C:\Users\ANDREW\OneDrive\Documents\GitHub\C-Game-Project1\C# GameProj1\C# GameProj1\obj\Debug\net10.0-windows\refint\C# GameProj1.dll
+C:\Users\ANDREW\OneDrive\Documents\GitHub\C-Game-Project1\C# GameProj1\C# GameProj1\obj\Debug\net10.0-windows\C# GameProj1.pdb
+C:\Users\ANDREW\OneDrive\Documents\GitHub\C-Game-Project1\C# GameProj1\C# GameProj1\obj\Debug\net10.0-windows\C# GameProj1.genruntimeconfig.cache
+C:\Users\ANDREW\OneDrive\Documents\GitHub\C-Game-Project1\C# GameProj1\C# GameProj1\obj\Debug\net10.0-windows\ref\C# GameProj1.dll
