@@ -60,6 +60,18 @@ namespace C__GameProj1
             {
                 background.Left += backgroundSpeed;
                 MoveGameElements("forward");
+            pictureBox13.Left -= enemySpeed;
+            
+            if (pictureBox13.Left < -100) 
+            
+                pictureBox13.Left = 900; 
+            }
+
+            if (player.Bounds.IntersectsWith(pictureBox13.Bounds))
+            {
+                MainTimer.Stop(); 
+                MessageBox.Show("Game Over!");
+                
             }
 
             if (goRight == true && background.Left > -1377)
