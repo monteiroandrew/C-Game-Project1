@@ -30,7 +30,7 @@
         {
             components = new System.ComponentModel.Container();
             background = new PictureBox();
-            pictureBox1 = new PictureBox();
+            platform1 = new PictureBox();
             pictureBox2 = new PictureBox();
             pictureBox3 = new PictureBox();
             pictureBox4 = new PictureBox();
@@ -74,8 +74,12 @@
             pictureBox39 = new PictureBox();
             txtScore = new Label();
             GameTimer = new System.Windows.Forms.Timer(components);
+            pictureBox40 = new PictureBox();
+            pictureBox41 = new PictureBox();
+            pictureBox42 = new PictureBox();
+            pictureBox43 = new PictureBox();
             ((System.ComponentModel.ISupportInitialize)background).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)platform1).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox2).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox3).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox4).BeginInit();
@@ -117,12 +121,16 @@
             ((System.ComponentModel.ISupportInitialize)pictureBox37).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox38).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox39).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox40).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox41).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox42).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox43).BeginInit();
             SuspendLayout();
             // 
             // background
             // 
             background.Image = Properties.Resources.background;
-            background.Location = new Point(0, 0);
+            background.Location = new Point(4, 0);
             background.Name = "background";
             background.Size = new Size(2000, 480);
             background.SizeMode = PictureBoxSizeMode.AutoSize;
@@ -130,15 +138,15 @@
             background.TabStop = false;
             background.Click += background_Click;
             // 
-            // pictureBox1
+            // platform1
             // 
-            pictureBox1.BackgroundImage = Properties.Resources.platform;
-            pictureBox1.Location = new Point(0, 440);
-            pictureBox1.Name = "pictureBox1";
-            pictureBox1.Size = new Size(537, 40);
-            pictureBox1.TabIndex = 1;
-            pictureBox1.TabStop = false;
-            pictureBox1.Tag = "platform";
+            platform1.BackgroundImage = Properties.Resources.platform;
+            platform1.Location = new Point(0, 440);
+            platform1.Name = "platform1";
+            platform1.Size = new Size(521, 40);
+            platform1.TabIndex = 1;
+            platform1.TabStop = false;
+            platform1.Tag = "platform";
             // 
             // pictureBox2
             // 
@@ -153,19 +161,20 @@
             // pictureBox3
             // 
             pictureBox3.BackgroundImage = Properties.Resources.platform;
-            pictureBox3.Location = new Point(269, 217);
+            pictureBox3.Location = new Point(259, 176);
             pictureBox3.Name = "pictureBox3";
             pictureBox3.Size = new Size(125, 40);
             pictureBox3.TabIndex = 1;
             pictureBox3.TabStop = false;
             pictureBox3.Tag = "platform";
+            pictureBox3.Click += pictureBox3_Click;
             // 
             // pictureBox4
             // 
             pictureBox4.BackgroundImage = Properties.Resources.platform;
-            pictureBox4.Location = new Point(484, 301);
+            pictureBox4.Location = new Point(553, 336);
             pictureBox4.Name = "pictureBox4";
-            pictureBox4.Size = new Size(125, 40);
+            pictureBox4.Size = new Size(163, 40);
             pictureBox4.TabIndex = 1;
             pictureBox4.TabStop = false;
             pictureBox4.Tag = "platform";
@@ -173,12 +182,13 @@
             // pictureBox5
             // 
             pictureBox5.BackgroundImage = Properties.Resources.platform;
-            pictureBox5.Location = new Point(1501, 208);
+            pictureBox5.Location = new Point(1519, 336);
             pictureBox5.Name = "pictureBox5";
             pictureBox5.Size = new Size(125, 40);
             pictureBox5.TabIndex = 1;
             pictureBox5.TabStop = false;
             pictureBox5.Tag = "platform";
+            pictureBox5.Click += pictureBox5_Click;
             // 
             // pictureBox6
             // 
@@ -189,11 +199,12 @@
             pictureBox6.TabIndex = 1;
             pictureBox6.TabStop = false;
             pictureBox6.Tag = "platform";
+            pictureBox6.Click += pictureBox6_Click;
             // 
             // pictureBox7
             // 
             pictureBox7.BackgroundImage = Properties.Resources.platform;
-            pictureBox7.Location = new Point(962, 290);
+            pictureBox7.Location = new Point(817, 274);
             pictureBox7.Name = "pictureBox7";
             pictureBox7.Size = new Size(125, 40);
             pictureBox7.TabIndex = 1;
@@ -203,9 +214,9 @@
             // pictureBox8
             // 
             pictureBox8.BackgroundImage = Properties.Resources.platform;
-            pictureBox8.Location = new Point(759, 160);
+            pictureBox8.Location = new Point(609, 450);
             pictureBox8.Name = "pictureBox8";
-            pictureBox8.Size = new Size(125, 40);
+            pictureBox8.Size = new Size(127, 20);
             pictureBox8.TabIndex = 1;
             pictureBox8.TabStop = false;
             pictureBox8.Tag = "platform";
@@ -213,7 +224,7 @@
             // pictureBox9
             // 
             pictureBox9.BackgroundImage = Properties.Resources.platform;
-            pictureBox9.Location = new Point(962, 87);
+            pictureBox9.Location = new Point(1059, 430);
             pictureBox9.Name = "pictureBox9";
             pictureBox9.Size = new Size(125, 40);
             pictureBox9.TabIndex = 1;
@@ -233,7 +244,7 @@
             // pictureBox11
             // 
             pictureBox11.BackgroundImage = Properties.Resources.platform;
-            pictureBox11.Location = new Point(1226, 430);
+            pictureBox11.Location = new Point(1236, 430);
             pictureBox11.Name = "pictureBox11";
             pictureBox11.Size = new Size(255, 40);
             pictureBox11.TabIndex = 1;
@@ -244,9 +255,9 @@
             // pictureBox12
             // 
             pictureBox12.BackgroundImage = Properties.Resources.platform;
-            pictureBox12.Location = new Point(1725, 87);
+            pictureBox12.Location = new Point(1670, 87);
             pictureBox12.Name = "pictureBox12";
-            pictureBox12.Size = new Size(125, 40);
+            pictureBox12.Size = new Size(218, 40);
             pictureBox12.TabIndex = 1;
             pictureBox12.TabStop = false;
             pictureBox12.Tag = "platform";
@@ -289,7 +300,7 @@
             // pictureBox13
             // 
             pictureBox13.Image = Properties.Resources.coin;
-            pictureBox13.Location = new Point(288, 191);
+            pictureBox13.Location = new Point(278, 150);
             pictureBox13.Name = "pictureBox13";
             pictureBox13.Size = new Size(25, 25);
             pictureBox13.SizeMode = PictureBoxSizeMode.StretchImage;
@@ -301,7 +312,7 @@
             // pictureBox14
             // 
             pictureBox14.Image = Properties.Resources.coin;
-            pictureBox14.Location = new Point(345, 191);
+            pictureBox14.Location = new Point(335, 150);
             pictureBox14.Name = "pictureBox14";
             pictureBox14.Size = new Size(25, 25);
             pictureBox14.SizeMode = PictureBoxSizeMode.StretchImage;
@@ -335,7 +346,7 @@
             // pictureBox17
             // 
             pictureBox17.Image = Properties.Resources.coin;
-            pictureBox17.Location = new Point(780, 138);
+            pictureBox17.Location = new Point(640, 419);
             pictureBox17.Name = "pictureBox17";
             pictureBox17.Size = new Size(25, 25);
             pictureBox17.SizeMode = PictureBoxSizeMode.StretchImage;
@@ -347,7 +358,7 @@
             // pictureBox18
             // 
             pictureBox18.Image = Properties.Resources.coin;
-            pictureBox18.Location = new Point(837, 138);
+            pictureBox18.Location = new Point(671, 419);
             pictureBox18.Name = "pictureBox18";
             pictureBox18.Size = new Size(25, 25);
             pictureBox18.SizeMode = PictureBoxSizeMode.StretchImage;
@@ -381,7 +392,7 @@
             // pictureBox21
             // 
             pictureBox21.Image = Properties.Resources.coin;
-            pictureBox21.Location = new Point(986, 259);
+            pictureBox21.Location = new Point(824, 243);
             pictureBox21.Name = "pictureBox21";
             pictureBox21.Size = new Size(25, 25);
             pictureBox21.SizeMode = PictureBoxSizeMode.StretchImage;
@@ -393,7 +404,7 @@
             // pictureBox22
             // 
             pictureBox22.Image = Properties.Resources.coin;
-            pictureBox22.Location = new Point(1043, 259);
+            pictureBox22.Location = new Point(855, 243);
             pictureBox22.Name = "pictureBox22";
             pictureBox22.Size = new Size(25, 25);
             pictureBox22.SizeMode = PictureBoxSizeMode.StretchImage;
@@ -404,7 +415,7 @@
             // pictureBox23
             // 
             pictureBox23.Image = Properties.Resources.coin;
-            pictureBox23.Location = new Point(990, 56);
+            pictureBox23.Location = new Point(886, 243);
             pictureBox23.Name = "pictureBox23";
             pictureBox23.Size = new Size(25, 25);
             pictureBox23.SizeMode = PictureBoxSizeMode.StretchImage;
@@ -416,13 +427,14 @@
             // pictureBox24
             // 
             pictureBox24.Image = Properties.Resources.coin;
-            pictureBox24.Location = new Point(1047, 56);
+            pictureBox24.Location = new Point(917, 243);
             pictureBox24.Name = "pictureBox24";
             pictureBox24.Size = new Size(25, 25);
             pictureBox24.SizeMode = PictureBoxSizeMode.StretchImage;
             pictureBox24.TabIndex = 4;
             pictureBox24.TabStop = false;
             pictureBox24.Tag = "coin";
+            pictureBox24.Click += pictureBox24_Click;
             // 
             // pictureBox25
             // 
@@ -602,7 +614,7 @@
             // 
             txtScore.AutoSize = true;
             txtScore.Font = new Font("Showcard Gothic", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            txtScore.Location = new Point(505, 9);
+            txtScore.Location = new Point(506, 9);
             txtScore.Name = "txtScore";
             txtScore.Size = new Size(105, 26);
             txtScore.TabIndex = 5;
@@ -615,11 +627,55 @@
             GameTimer.Interval = 20;
             GameTimer.Tick += MainTimerEvent;
             // 
+            // pictureBox40
+            // 
+            pictureBox40.BackgroundImage = Properties.Resources.platform;
+            pictureBox40.Location = new Point(1477, 192);
+            pictureBox40.Name = "pictureBox40";
+            pictureBox40.Size = new Size(125, 40);
+            pictureBox40.TabIndex = 1;
+            pictureBox40.TabStop = false;
+            pictureBox40.Tag = "platform";
+            pictureBox40.Click += pictureBox5_Click;
+            // 
+            // pictureBox41
+            // 
+            pictureBox41.BackgroundImage = Properties.Resources.platform;
+            pictureBox41.Location = new Point(981, 73);
+            pictureBox41.Name = "pictureBox41";
+            pictureBox41.Size = new Size(125, 40);
+            pictureBox41.TabIndex = 1;
+            pictureBox41.TabStop = false;
+            pictureBox41.Tag = "platform";
+            pictureBox41.Click += pictureBox41_Click;
+            // 
+            // pictureBox42
+            // 
+            pictureBox42.BackgroundImage = Properties.Resources.platform;
+            pictureBox42.Location = new Point(743, 73);
+            pictureBox42.Name = "pictureBox42";
+            pictureBox42.Size = new Size(125, 40);
+            pictureBox42.TabIndex = 1;
+            pictureBox42.TabStop = false;
+            pictureBox42.Tag = "platform";
+            pictureBox42.Click += pictureBox41_Click;
+            // 
+            // pictureBox43
+            // 
+            pictureBox43.BackgroundImage = Properties.Resources.platform;
+            pictureBox43.Location = new Point(1693, 253);
+            pictureBox43.Name = "pictureBox43";
+            pictureBox43.Size = new Size(125, 40);
+            pictureBox43.TabIndex = 1;
+            pictureBox43.TabStop = false;
+            pictureBox43.Tag = "platform";
+            pictureBox43.Click += pictureBox5_Click;
+            // 
             // Form1
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(622, 473);
+            ClientSize = new Size(616, 473);
             Controls.Add(txtScore);
             Controls.Add(pictureBox28);
             Controls.Add(pictureBox27);
@@ -654,24 +710,28 @@
             Controls.Add(pictureBox12);
             Controls.Add(pictureBox11);
             Controls.Add(pictureBox10);
+            Controls.Add(pictureBox42);
+            Controls.Add(pictureBox41);
             Controls.Add(pictureBox9);
             Controls.Add(pictureBox8);
             Controls.Add(pictureBox7);
             Controls.Add(pictureBox6);
             Controls.Add(pictureBox4);
             Controls.Add(pictureBox3);
+            Controls.Add(pictureBox43);
+            Controls.Add(pictureBox40);
             Controls.Add(pictureBox5);
             Controls.Add(pictureBox2);
-            Controls.Add(pictureBox1);
+            Controls.Add(platform1);
             Controls.Add(background);
             Name = "Form1";
-            Text = "Side Scrolling Dino";
+            Text = "Side Scrolling Game";
             FormClosed += CloseGame;
             Load += Form1_Load;
             KeyDown += KeyIsDown;
             KeyUp += KeyIsUp;
             ((System.ComponentModel.ISupportInitialize)background).EndInit();
-            ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
+            ((System.ComponentModel.ISupportInitialize)platform1).EndInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox2).EndInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox3).EndInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox4).EndInit();
@@ -713,6 +773,10 @@
             ((System.ComponentModel.ISupportInitialize)pictureBox37).EndInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox38).EndInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox39).EndInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox40).EndInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox41).EndInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox42).EndInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox43).EndInit();
             ResumeLayout(false);
             PerformLayout();
         }
@@ -720,7 +784,7 @@
         #endregion
 
         private PictureBox background;
-        private PictureBox pictureBox1;
+        private PictureBox platform1;
         private PictureBox pictureBox2;
         private PictureBox pictureBox3;
         private PictureBox pictureBox4;
@@ -764,5 +828,9 @@
         private PictureBox pictureBox39;
         private Label txtScore;
         private System.Windows.Forms.Timer GameTimer;
+        private PictureBox pictureBox40;
+        private PictureBox pictureBox41;
+        private PictureBox pictureBox42;
+        private PictureBox pictureBox43;
     }
 }

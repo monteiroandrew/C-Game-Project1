@@ -12,9 +12,7 @@ namespace C__GameProj1
 
         int playerSpeed = 10;
         int backgroundSpeed = 8;
-
-
-
+        int gravity = 10;
 
 
         public Form1()
@@ -70,22 +68,21 @@ namespace C__GameProj1
                 MoveGameElements("back");
             }
 
-            if (jumping == true)
+            if (jumping && force > 0)
             {
-                jumpSpeed = -12;
-                force -= 1;
+                jumpSpeed = -gravity;
+                force--;
             }
-
             else
             {
-                jumpSpeed = 12;
-
+                jumpSpeed = gravity;
             }
 
-            if (jumping == true && force < 0)
+            if (jumping && force <= 0)
             {
                 jumping = false;
             }
+
 
             foreach (Control x in this.Controls)
             {
@@ -99,10 +96,8 @@ namespace C__GameProj1
                     }
 
                     x.BringToFront();
-
-
-
                 }
+
 
                 if (x is PictureBox && (string)x.Tag == "coin")
                 {
@@ -112,7 +107,10 @@ namespace C__GameProj1
                         score += 1;
                     }
                 }
+
             }
+            
+
 
             if (player.Bounds.IntersectsWith(key.Bounds))
             {
@@ -136,6 +134,7 @@ namespace C__GameProj1
             }
 
         }
+
 
         private void KeyIsDown(object sender, KeyEventArgs e)
         {
@@ -170,8 +169,6 @@ namespace C__GameProj1
                 jumping = false;
             }
 
-
-
         }
 
         private void CloseGame(object sender, FormClosedEventArgs e)
@@ -189,6 +186,23 @@ namespace C__GameProj1
 
         private void MoveGameElements(string direction)
         {
+            foreach (Control x in this.Controls)
+            {
+                if (x is PictureBox)
+                {
+                    if ((string)x.Tag == "player" || (string)x.Tag == "enemy") continue;
+                    {
+                        if (direction == "back")
+                        {
+                            x.Left -= backgroundSpeed;
+                        }
+                        else if (direction == "forward")
+                        {
+                            x.Left += backgroundSpeed;
+                        }
+                    }
+                }
+            }
 
             foreach (Control x in this.Controls)
             {
@@ -205,8 +219,6 @@ namespace C__GameProj1
                         x.Left += backgroundSpeed;
                     }
 
-
-
                 }
 
             }
@@ -219,6 +231,36 @@ namespace C__GameProj1
         }
 
         private void txtScore_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void pictureBox40_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void pictureBox24_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void pictureBox5_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void pictureBox41_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void pictureBox3_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void pictureBox6_Click(object sender, EventArgs e)
         {
 
         }
