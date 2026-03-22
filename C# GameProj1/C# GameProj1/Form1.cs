@@ -15,6 +15,7 @@ namespace C__GameProj1
         int gravity = 10;
 
 
+
         public Form1()
         {
             InitializeComponent();
@@ -60,18 +61,6 @@ namespace C__GameProj1
             {
                 background.Left += backgroundSpeed;
                 MoveGameElements("forward");
-            pictureBox13.Left -= enemySpeed;
-            
-            if (pictureBox13.Left < -100) 
-            
-                pictureBox13.Left = 900; 
-            }
-
-            if (player.Bounds.IntersectsWith(pictureBox13.Bounds))
-            {
-                MainTimer.Stop(); 
-                MessageBox.Show("Game Over!");
-                
             }
 
             if (goRight == true && background.Left > -1377)
@@ -121,7 +110,7 @@ namespace C__GameProj1
                 }
 
             }
-            
+
 
 
             if (player.Bounds.IntersectsWith(key.Bounds))
@@ -130,13 +119,22 @@ namespace C__GameProj1
                 haskey = true;
             }
 
-            if (player.Bounds.IntersectsWith(door.Bounds) && haskey == true)
+            if (player.Bounds.IntersectsWith(door.Bounds))
             {
-                door.Image = Properties.Resources.door_open;
-                GameTimer.Stop();
-                MessageBox.Show("Well Done! " + Environment.NewLine + "Click Okay to Play Again..");
-                Restartgame();
+                if (haskey && score >= 30)
+                {
+                    door.Image = Properties.Resources.door_open;
+                    GameTimer.Stop();
+                    MessageBox.Show("Well Done! " + Environment.NewLine + "Click Okay to Play Again..");
+                    Restartgame();
+                }
+                else if (haskey && score < 30)
+                {
+                    lblDoorWarning.Text = "You need at least 30 coins!";
+                    lblDoorWarning.Visible = true;
+                }
             }
+
 
             if (player.Top + player.Height > this.ClientSize.Height)
             {
@@ -190,11 +188,44 @@ namespace C__GameProj1
 
         private void Restartgame()
         {
-            Form1 newWindow = new Form1();
-            newWindow.Show();
-            this.Hide();
+            // fixed respawn position
+            player.Left = 114;
+            player.Top = 378;
 
+            // reset movement flags
+            goLeft = false;
+            goRight = false;
+            jumping = false;
+
+            // reset values
+            score = 0;
+            haskey = false;
+            jumpSpeed = 0;
+            force = 8;
+
+            // reset key and door
+            key.Visible = true;
+            door.Image = Properties.Resources.door_closed;
+
+            // reset coins
+            foreach (Control x in this.Controls)
+            {
+                if (x is PictureBox && x.Tag != null && (string)x.Tag == "coin")
+                {
+                    x.Visible = true;
+                }
+            }
+
+            lblDoorWarning.Visible = false;
+            lblDoorWarning.Text = "";
+
+            // restart game loop
+            GameTimer.Start();
         }
+
+
+
+
 
         private void MoveGameElements(string direction)
         {
@@ -202,7 +233,7 @@ namespace C__GameProj1
             {
                 if (x is PictureBox)
                 {
-                    if ((string)x.Tag == "player" || (string)x.Tag == "enemy") continue;
+                    if ((string)x.Tag == "player")
                     {
                         if (direction == "back")
                         {
@@ -273,6 +304,11 @@ namespace C__GameProj1
         }
 
         private void pictureBox6_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void pictureBox14_Click(object sender, EventArgs e)
         {
 
         }

@@ -1,8 +1,10 @@
 {
   "ExpandedNodes": [
     "",
-    "\\C# GameProj1"
+    "\\C# GameProj1",
+    "\\C# GameProj1\\C# GameProj1",
+    "\\C# GameProj1\\C# GameProj1\\Resources"
   ],
-  "SelectedNode": "\\C# GameProj1\\C# GameProj1.slnx",
+  "SelectedNode": "\\C# GameProj1\\C# GameProj1\\Form1.cs",
   "PreviewInSolutionExplorer": false
 }
