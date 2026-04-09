@@ -624,11 +624,11 @@
             // 
             txtScore.AutoSize = true;
             txtScore.Font = new Font("Showcard Gothic", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            txtScore.Location = new Point(506, 9);
+            txtScore.Location = new Point(509, 9);
             txtScore.Name = "txtScore";
-            txtScore.Size = new Size(105, 26);
+            txtScore.Size = new Size(23, 26);
             txtScore.TabIndex = 5;
-            txtScore.Text = "Score: 0";
+            txtScore.Text = "S";
             txtScore.Click += txtScore_Click;
             // 
             // GameTimer

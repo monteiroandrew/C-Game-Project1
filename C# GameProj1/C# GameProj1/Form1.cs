@@ -23,7 +23,17 @@ namespace C__GameProj1
 
         private void Form1_Load(object sender, EventArgs e)
         {
-
+            MessageBox.Show(
+        "Welcome to the Game!\n\n" +
+        "Controls:\n" +
+        "- Press 'A' to move left\n" +
+        "- Press 'D' to move right\n" +
+        "- Press 'Space' to jump\n\n" +
+        "Collect coins, find the key, and reach the door!",
+        "Game Instructions",
+        MessageBoxButtons.OK,
+        MessageBoxIcon.Information
+    );
         }
 
         private void pictureBox11_Click(object sender, EventArgs e)
@@ -149,11 +159,11 @@ namespace C__GameProj1
         private void KeyIsDown(object sender, KeyEventArgs e)
         {
 
-            if (e.KeyCode == Keys.Left)
+            if (e.KeyCode == Keys.A)
             {
                 goLeft = true;
             }
-            if (e.KeyCode == Keys.Right)
+            if (e.KeyCode == Keys.D)
             {
                 goRight = true;
             }
@@ -166,11 +176,11 @@ namespace C__GameProj1
 
         private void KeyIsUp(object sender, KeyEventArgs e)
         {
-            if (e.KeyCode == Keys.Left)
+            if (e.KeyCode == Keys.A)
             {
                 goLeft = false;
             }
-            if (e.KeyCode == Keys.Right)
+            if (e.KeyCode == Keys.D)
             {
                 goRight = false;
             }
